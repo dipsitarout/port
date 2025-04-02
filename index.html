@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIPSITA PORTFOLIO</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">DR</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> <span>About</span></a></li>
+                    
+                    <li><a href="#skills"><i class="fa-solid fa-briefcase"></i> <span>Skills</span></a></li>
+                    <li><a href="#exp"><i class="fa-solid fa-laptop"></i> <span>Experience</span></a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-folder"></i> <span>Projects</span></a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-phone"></i> <span>Contact</span></a></li>
+                </ul>
+                <div class="menu" onclick="toggleDropdown()">☰</div>
+            </div>
+
+            <button class="highlight toggle-btn" onclick="toggleTheme()">Theme</button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> <span>About</span></a></li>
+                   
+                    <li><a href="#skills"><i class="fa-solid fa-briefcase"></i> <span>Skills</span></a></li>
+                    <li><a href="#exp"><i class="fa-solid fa-laptop"></i> <span>Experience</span></a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-folder"></i> <span>Projects</span></a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-phone"></i> <span>Contact</span></a></li>
+                   <li> <button class="highlight toggle-btn" onclick="toggleTheme()">Theme</button></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero ">
+        <div class="hero-content hidden ">
+
+            <h1><span id="typing-name"></span></h1>
+            <h3><span id="typing-title"></span></h3>
+
+            <div class="hero-buttons hidden" style="margin-top: 50px;">
+                <a href="./DIPSITA_RESUME.pdf" download class="btn btn-resume">Download Resume</a>
+                <a href="./ASSET/tocc_dip.mp4" class="btn btn-video">Watch Intro</a>
+            </div>
+
+            <div class="social-icons hidden">
+                <a href="https://github.com/dipsitarout" class="social-btn github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dipsita-rout/" class="social-btn linkedin"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/dipsitarout" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+
+        <div class="hero-image-container hidden">
+            <div class="image-stack">
+                <!-- Main Rectangular Image -->
+                <img src="./ASSET/dip1.png" alt="Profile Image" class="hero-image main-img">
+
+                
+                <img src="./ASSET/dip2.png" alt="Overlay Image" class="hero-image overlay-img img1">
+            </div>
+        </div>
+
+
+    </section>
+    <section id="about">
+        <h1  style="font-family: cursive; " class="hidden">About Me</h1>
+        <div class="ab">
+            <div id="pic" class="hidden">
+                <img src="./dipsita.png" alt="Dipsita Rout">
+            </div>
+            <div id="data" class="hidden">
+                <p>
+                    I am a computer science enthusiast named <b style="color:#ff1040">Dipsita Rout</b> from Patna, India. Currently, I am a student at <b style="color:#ff1040">VIT Chennai</b>, pursuing my passion for technology.
+                    <br><br>With a background in <b style="color:#ff1040">Full Stack Web Development</b> and a knack for exploring <b style="color:#ff1040">computer science</b>, I am constantly seeking opportunities to expand my knowledge and skills.
+                    <br><br>My goal is to contribute positively to the field of technology and create solutions that benefit society.
+                </p>
+                <div id="education" class="hidden">
+                      
+                    <ul>
+                        <li><b>VIT, Chennai</b>B.Tech in Computer Science (2023 - 2027)<br><span>Current CGPA: 8.9</span></li>
+                        <li><b>DPS Patna</b>12th Grade - CBSE (2021 - 2023)<br><span>Percentage: 92%</span></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="myservices" >
+            <h1>Languages</h1>
+            <div class="services-list hidden" >
+                <div class="service-box ">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>    
+                    <p>Web developer skilled in HTML, CSS, JavaScript. Creating functional, visually appealing websites with exceptional user experiences. Excited to collaborate on your next project.</p>
+                </div>
+                <div class="service-box hidden ">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Experienced Java coder specializing in robust solutions, efficient algorithms, and user-friendly interfaces. Passionate about innovation and delivering high-quality code. Ready to tackle your next project with expertise and precision.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="skills" class="hidden">
+        <h1 style="font-family: cursive; text-align: center;" class="hidden"><b>Skills</b></h1>
+        <br><br>
+        <div id="skillin" class="hidden">
+            <div id="con" class="hidden">
+                <h3>Technical Skills</h3>
+                <div class="technical-bars hidden">
+                    <div class="bar"><i style="color:orange" class="fa-brands fa-html5"></i>
+                        <div class="info">
+                            <span class="skill-name">HTML</span>
+                            <span class="percentage">90</span>
+                        </div>
+                        <div class="lines html" style="  width: 90%;">
+                            <span></span>
+                        </div>
+                    </div>
+                  
+                    <div class="bar"><i style="color:rgb(47, 190, 252)" class="fa-brands fa-css3-alt"></i>
+                        <div class="info">
+                            <span class="skill-name">CSS</span>
+                            <span class="percentage">86</span>
+                        </div>
+                        <div class="lines css" style="  width: 86%;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color:blue" class="fa-solid fa-c"></i>
+                        <div class="info">
+                            <span class="skill-name">C++</span>
+                            <span class="percentage">87</span>
+                        </div>
+                        <div class="lines C" style="  width: 87%;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                       <i style="color:rgb(255, 81, 81)" class="fa-brands fa-java"></i>
+                       <div class="info">
+                            <span class="skill-name">JAVA</span>
+                            <span class="percentage" >97</span>
+                        </div>
+                        <div class="lines java" style="  width: 97%;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color:yellow" class="fa-brands fa-js"></i>
+                        <div class="info">
+                            <span class="skill-name">JAVASCRIPT</span>
+                            <span class="percentage">90</span>
+                        </div>
+                        <div class="lines javas" style="width: 90%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bb1" class="hidden">
+                <h3>Professional Skills</h3>
+                <div class="technical-bars b1 hidden">
+                    <div class="bar"><br>
+                        <div class="info">
+                            <span class="skill-name">Creativity</span>
+                            <span class="percentage">88</span>
+                        </div>
+                        <div class="lines creative" style="  width: 88%;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><br>
+                        <div class="info">
+                            <span class="skill-name">Communication</span>
+                            <span class="percentage">92</span>
+                        </div>
+                        <div class="lines communicate" style="  width: 92%;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><br>
+                        <div class="info">
+                            <span class="skill-name">Problem Solving</span>
+                            <span class="percentage">85</span>
+                        </div>
+                        <div class="lines problem" style="  width: 85%;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><br>
+                        <div class="info">
+                            <span class="skill-name">Teamwork</span>
+                            <span class="percentage">90</span>
+                        </div>
+                        <div class="lines teamwork" style="  width: 90%;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><br>
+                        <div class="info">
+                            <span class="skill-name">Leadership</span>
+                            <span class="percentage">95</span>
+                        </div>
+                        <div class="lines Leadership" style="  width: 95%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="exp">
+        <h1 style="font-family: cursive; text-align: center;" class="hidden"><b>Experience</b></h1>
+        <ul>
+            <li style="--accent-color:#41516C" class="hidden">
+                <div class="date">Treasurer</div>
+                <div class="title">IEEE PHOTONICS SOCIETY</div>
+                <div class="descr">The Treasurer of IEEE Photonics is responsible for managing the club's finances, budgeting for events, and ensuring proper fund allocation.</div>
+            </li>
+            <li style="--accent-color:#FBCA3E" class="hidden">
+                <div class="date">Ambience Lead</div>
+                <div class="title">KALINGA JYOTI</div>
+                <div class="descr">They oversee decor, lighting, and thematic elements to create an immersive and engaging environment that enhances the overall event aesthetics.</div> </li>
+            <li style="--accent-color:#E24A68" class="hidden">
+                <div class="date">Technical Lead</div>
+                <div class="title">ROBOTICS CLUB</div>
+                <div class="descr">The Technical Lead at Robotics is responsible for guiding the team in robotics development, overseeing project execution.</div>
+                    </li>
+            <li style="--accent-color:#1B5F8C" class="hidden">
+                <div class="date">Discipline Committee Member</div>
+                <div class="title">VIBRANCE'25</div>
+                <div class="descr">The Discipline Committee Member at Vibrance '25 is responsible for maintaining order and ensuring smooth conduct during the event. </div>
+            </li>
+            
+        </ul>
+    </section>
+   
+    <section class="projects-section hidden " id="projects">
+        <h1 style="font-family: cursive; color: white;"><b>Projects</b></h1>
+        <div class="projects-container">
+            <div class="project-card hidden">
+                <video src="./ASSET/lib.mov" controls></video>
+                <h2>Library Management System</h2>
+                <p>A Node.js and MongoDB-based library management system with room booking, email confirmations, and PDF generation.</p>
+                <a href="https://github.com/dipsitarout/LIBRARY_MANAGEMENT/" target="_blank">View on GitHub</a>
+            </div>
+    
+            <div class="project-card hidden ">
+                <video src="./ASSET/fest.mov" controls></video>
+                <h2>Fest Management System</h2>
+                <p>A Fest Management System integrated with Razorpay enables seamless online payments for registrations, tickets, and merchandise. It ensures secure transactions, real-time tracking.</p>
+                <a href="https://github.com/dipsitarout/EVENT-BOOKING-COLLEGE" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card hidden">
+                <video src="./ASSET/converter.mp4" controls></video>
+                <h2>Tamil-English-Tamil Converter</h2>
+               
+                <p> A Tamil-English-Tamil converter efficiently translates text between the two languages using NLP techniques. It ensures accurate translations for seamless communication.</p>  
+                <a href="https://github.com/dipsitarout/TAMIL-ENGLISH-TAMIL" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card hidden ">
+                <video src="./ASSET/crypto.mov" controls></video>
+                <h2>CryptoClash CTF</h2>
+                <p>A cybersecurity CTF event platform built with Flask, enabling students to solve challenges and improve their skills.</p>
+                <a href="https://github.com/shreyashgautam/cryptoclash" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card hidden ">
+                <video src="./ASSET/ppp.mov" controls></video>
+                <h2>Portfolio Website</h2>
+                <p>A portfolio website showcases your skills, projects, and achievements in a visually appealing and professional manner. It serves as a personal brand identity, helping you stand out to recruiters, clients, or collaborators.</p>
+                <a href="#" target="_blank">View on GitHub</a>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+      <section id='contact'>
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center; font-family: cursive;">Feel Free To Contact Me</h1>
+            <div class="row">
+                <div class="contactleft">
+                   
+                    <p>dipsitarout@gmail.com</p>
+                    <p>7001234578</p>
+
+                    <div class="socialicons">
+                        <a href=""> <i class="fab fa-facebook"></i> </a>
+                        <a href=""> <i class="fab fa-twitter-square"></i> </a>
+                        <a href=""> <i class="fab fa-instagram"></i> </a>
+                        <a href=""> <i class="fab fa-linkedin"></i> </a>
+                    </div>
+                    <br>
+                    <div class="hero-buttons xx">
+                        <a href="./DIPSITA_RESUME.pdf" download class="btn btn-resume">Download Resume</a>
+                    </div>
+                </div>
+                <div class="contactright">
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea  name="Message" rows="6" placeholder="Your Message" required> </textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+      </section>
+    <script src="https://kit.fontawesome.com/a997736e89.js" crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxvUp_mSzW4JYL3miH_kZPzERbizImGmtDoNgv2IDbOBNmg7nUxCn8QOEgk2eSbawoQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
